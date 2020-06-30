@@ -16,7 +16,7 @@ const Rocket = (props) => (
             </div>
                 <p>{props.des.substring(0,50)}...</p>
         </CardContent>
-        <Button className={classes.Button} variant="contained" color="primary">More Info</Button>
+        <Button disabled={props.active} onClick={() => props.click(props.id)} className={classes.Button} variant="contained" color="primary">More Info</Button>
     </Card>
 );
 
